@@ -1,0 +1,32 @@
+{
+    "userId": 1,
+    "matricula": "123456",
+    "nome": "João da Silva",
+    "email": "joao.silva@example.com",
+    "telefone": "(11) 98765-4321",
+    "morada": [
+        {
+            "rua": "Rua Exemplo",
+            "numero": "123",
+            "bairro": "Bairro Exemplo",
+            "cidade": "Cidade Exemplo",
+            "distrito": "Estado Exemplo",
+            "codigo-postal": "12345-678"
+        },
+        {
+            "rua": "Avenida Exemplo",
+            "numero": "456",
+            "bairro": "Bairro Exemplo 2",
+            "cidade": "Cidade Exemplo 2",
+            "distrito": "Estado Exemplo 2",
+            "codigo-postal": "23456-789"
+        }
+    ],
+    "detalheVeiculo": {
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "ano": 2020,
+        "cor": "Prata",
+        "placa": "ABC-1234"
+    }
+}

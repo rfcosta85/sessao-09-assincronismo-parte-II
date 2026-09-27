@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Catálogo de séries com pesquisa por título, ano e classificação."
+    >
+
+    <title>Catálogo de Séries</title>
+
+    <link rel="stylesheet" href="06-movies-api.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo" aria-label="Catálogo de Séries — Página inicial">
+                Catálogo de Séries
+            </div>
+
+            <p class="site-description">
+                Encontre as suas séries favoritas.
+            </p>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <section class="search-section" aria-labelledby="search-title">
+            <div class="container">
+
+                <h1 id="search-title">Pesquisar séries</h1>
+
+                <form id="search-form" role="search">
+                    <div class="search-field">
+                        <label for="movie-search">
+                            Nome da série
+                        </label>
+
+                        <input
+                            type="search"
+                            id="movie-search"
+                            name="movie-search"
+                            placeholder="Ex.: Inception"
+                            autocomplete="off"
+                            aria-describedby="search-help"
+                        >
+
+                        <p id="search-help">
+                            Digite o nome de uma série para filtrar os resultados.
+                        </p>
+                    </div>
+
+                    <button type="submit">
+                        Pesquisar
+                    </button>
+                </form>
+
+            </div>
+        </section>
+
+        <section
+            class="movies-section"
+            aria-labelledby="movies-title"
+        >
+            <div class="container">
+
+                <div class="section-header">
+                    <h2 id="movies-title">Séries</h2>
+
+                    <p id="results-count" aria-live="polite">
+                        A carregar séries...
+                    </p>
+                </div>
+
+                <div
+                    id="movies-list"
+                    class="movies-grid"
+                    aria-live="polite"
+                    aria-busy="true"
+                >
+                    <!-- Os filmes serão inseridos pelo JavaScript -->
+                </div>
+
+                <p
+                    id="empty-message"
+                    class="empty-message"
+                    hidden
+                >
+                    Nenhuma série encontrada.
+                </p>
+
+                <p
+                    id="error-message"
+                    class="error-message"
+                    role="alert"
+                    hidden
+                >
+                    Não foi possível carregar as séries.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                Catálogo de Séries — Projeto educativo
+            </p>
+        </div>
+    </footer>
+
+    <script src="06-movies-api.js" defer></script>
+</body>
+</html>
