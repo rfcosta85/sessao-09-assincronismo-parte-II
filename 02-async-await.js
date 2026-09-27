@@ -28,9 +28,9 @@ function melhorMusicaDeRock(response) {
 async function melhorBanda() {
     try {
         const melhorBandaDeRockResponse = await melhorBandaDeRock("Queen");
-    console.log(melhorBandaDeRockResponse);
-    const melhorMusicaDeRockResponse = await melhorMusicaDeRock(melhorBandaDeRockResponse);
-    console.log(melhorMusicaDeRockResponse);
+        console.log(melhorBandaDeRockResponse);
+        const melhorMusicaDeRockResponse = await melhorMusicaDeRock(melhorBandaDeRockResponse);
+        console.log(melhorMusicaDeRockResponse);
     } catch (err) {
         console.log(err.mensagem);
     }

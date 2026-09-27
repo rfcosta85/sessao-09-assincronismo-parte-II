@@ -12,7 +12,7 @@ function melhorBandaDeRock(banda) {
                 mensagem: "Eu não tenho certeza!"
             })
         }
-    })
+    });
 }
 
 function melhorMusicaDeRock(response) {
