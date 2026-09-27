@@ -25,7 +25,7 @@ function melhorMusicaDeRock(response) {
     });
 }
 
-async function  melhorBanda() {
+async function melhorBanda() {
     try {
         const melhorBandaDeRockResponse = await melhorBandaDeRock("Queen");
     console.log(melhorBandaDeRockResponse);
